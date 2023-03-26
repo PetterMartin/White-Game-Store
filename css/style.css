@@ -293,7 +293,7 @@ header.active {
     width: 100%;
     border-top: 1px solid #EDEEED;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 2;
   }
   .mobile-nav a {
     display: flex;
@@ -394,6 +394,12 @@ header.active {
   margin-left: 8rem;
 }
 
+@media screen and (max-width: 768px) {
+  .slide-container {
+    margin-left: auto;
+  }
+}
+
 .square {
   height: 600px;
   position: relative;
@@ -402,6 +408,12 @@ header.active {
   margin-bottom: 2rem;
   border-radius: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .square {
+    height: 200px;
+  }
 }
 
 .square.fortnite {
@@ -429,6 +441,7 @@ header.active {
   color: #403e57;
   border-radius: 20px;
   }
+
 
 .content h1 {
   font-family: 'Goldman', cursive;
@@ -549,10 +562,16 @@ header.active {
   }
 
   @media screen and (max-width: 768px) {
-    .image-square {
-      height: 50%;
-      width: 50%;
+    .image-grid {
+      margin-left: 1rem;
     }
+    .image-square {
+      height: 90px;
+      width: 150px;
+      margin: 10px;
+    }
+
+
   }
   
   .image-square:hover {
@@ -573,8 +592,14 @@ header.active {
   }
   
   .left-column {
-    display: flex;
-    flex-direction: column;
+    width: 500px;
+  }
+
+  @media (max-width: 768px) {
+    .left-column {
+      width: 200px;
+      height: 50px;
+    }
   }
   
   .right-column {
@@ -587,6 +612,12 @@ header.active {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
+  @media (max-width: 768px) {
+    .right-column {
+      margin-left: 1rem;
+    }
+  }
   
   .for-you {
     display: flex;
@@ -594,6 +625,12 @@ header.active {
     justify-content: space-between;
     margin-left: 8rem;
     margin-bottom: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .for-you {
+      margin-left: 1rem;
+    }
   }
 
   .recommended {
@@ -759,12 +796,6 @@ header.active {
     transform: scale(1.1);
     color: #fff;
     background: linear-gradient(90deg, #2856b8 21.56%, #664cd9 81.43%);
-  }
-
-  @media (max-width: 768px) {
-    .sale {
-      flex-direction: column;
-    }
   }
 
   /* Footer */
