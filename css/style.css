@@ -621,6 +621,7 @@ header.active {
   }
   
   .right-column {
+    width: 900px;
     display: flex;
     margin-right: 2rem;
     margin-bottom: 4rem;
@@ -736,7 +737,7 @@ header.active {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 700px;
     margin-top: 1.5rem;
     margin-left: 2rem;
     color: #EDEEED;
@@ -749,6 +750,7 @@ header.active {
       align-items: flex-start;
       margin-top: 1rem;
       margin-left: 0;
+      width: 150px;
     }
   }
 
