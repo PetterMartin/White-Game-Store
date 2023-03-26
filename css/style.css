@@ -261,7 +261,7 @@ header.active {
     background-color: #2b2b2b;
 }
 
-nav {
+.main-nav {
     background-color: #F3F3F3;
     height: 100vh;
     display: flex;
@@ -273,6 +273,43 @@ nav {
     left: 0;
     border-right: 5px solid #EDEEED ;
 }
+
+@media (max-width: 768px) {
+  /* Hide the desktop nav bar */
+  .main-nav {
+    display: none;
+  }
+  /* Style the mobile nav bar */
+  .mobile-nav {
+    background-color: #FFFFFF;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #EDEEED;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .mobile-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #2b2b2b;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .mobile-nav a i {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+}
+
   
   .logo {
     padding: 20px;
@@ -311,7 +348,7 @@ nav {
     left: 55px; 
     width: 4.5px;
     height: 40px; 
-    background-color: #7AEB86;
+    background-color: #00B4FB;
     border-radius: 20px;
   }
   
@@ -340,7 +377,7 @@ nav {
     left: 55px; 
     width: 4.5px;
     height: 40px; 
-    background-color: #7AEB86;
+    background-color: #00B4FB;
     border-radius: 20px;
   }
   
@@ -401,9 +438,10 @@ nav {
 }
 
 .content p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 3rem;
   max-width: 400px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .button-container {
@@ -509,6 +547,13 @@ nav {
     cursor: pointer;
     transition: transform 0.3s ease-out;
   }
+
+  @media screen and (max-width: 768px) {
+    .image-square {
+      height: 50%;
+      width: 50%;
+    }
+  }
   
   .image-square:hover {
     transform: scale(1.1);
@@ -520,13 +565,6 @@ nav {
     object-fit: cover;
   }
 
-  @media only screen and (max-width: 768px) {
-    .image-square {
-      height: 150px;
-      width: 225px;
-    }
-  }
-
   /* Sale */ 
 
   .store-container {
@@ -535,17 +573,16 @@ nav {
   }
   
   .left-column {
-    width: 35%;
     display: flex;
     flex-direction: column;
   }
   
   .right-column {
-    width: 50%;
     display: flex;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
     margin-left: 4rem;
     background: linear-gradient(89.95deg, #6F65FC -0.55%, #C129FB 98.76%);
-    margin-bottom: 4rem;
     padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -573,7 +610,8 @@ nav {
 
   .recommended-info p, .dlc-info p {
     width: 10rem;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .recommended h3, .dlc h3 {
@@ -613,6 +651,11 @@ nav {
     background-size: cover;
 }
 
+.sale {
+  width: 800px;
+  margin: 1rem;
+}
+
 .sale h2 {
   margin-bottom: 2rem;
   font-family: 'Goldman', cursive;
@@ -630,7 +673,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 550px;
+    width: 100%;
     margin-top: 1.5rem;
     margin-left: 2rem;
     color: #EDEEED;
@@ -639,6 +682,10 @@ nav {
   .game-info h4 {
     font-size: 18px;
     font-family: 'Goldman', cursive;
+  }
+
+  .game-info p {
+    font-family: 'Poppins', sans-serif;
   }
 
   .game-image {
@@ -712,6 +759,12 @@ nav {
     transform: scale(1.1);
     color: #fff;
     background: linear-gradient(90deg, #2856b8 21.56%, #664cd9 81.43%);
+  }
+
+  @media (max-width: 768px) {
+    .sale {
+      flex-direction: column;
+    }
   }
 
   /* Footer */

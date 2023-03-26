@@ -18,19 +18,19 @@ const header = document.querySelector("header");
 
 // Nav Bar //
 if (window.location.pathname === "/index.html") {
-  houseIcon.style.color = "#7AEB86";
+  houseIcon.style.color = "#00B4FB";
   houseIcon.classList.add("active");
 } else if (window.location.pathname === "/social.html") {
-  socialIcon.style.color = "#7AEB86";
+  socialIcon.style.color = "#00B4FB";
   socialIcon.classList.add("active");
 } else if (window.location.pathname === "/library.html") {
-  bookIcon.style.color = "#7AEB86";
+  bookIcon.style.color = "#00B4FB";
   bookIcon.classList.add("active");
 } else if (window.location.pathname === "/downloads.html") {
-  downloadIcon.style.color = "#7AEB86";
+  downloadIcon.style.color = "#00B4FB";
   downloadIcon.classList.add("active");
 } else if (window.location.pathname === "/settings.html") {
-  cogIcon.style.color = "#7AEB86";
+  cogIcon.style.color = "#00B4FB";
   cogIcon.classList.add("active");
 }
 
