@@ -391,9 +391,10 @@ nav {
   margin-left: 2rem;
   color: #403e57;
   border-radius: 20px;
-}
+  }
 
 .content h1 {
+  font-family: 'Goldman', cursive;
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
@@ -422,22 +423,26 @@ nav {
   min-width: 200px;
   min-height: 60px;
   font-size: 1.5rem;
+  font-family: 'Goldman', cursive;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-weight: 700;
   margin-left: 3.5rem;
   color: #fff;
   background-image: linear-gradient(to right, #01b5fc, #00abff, #009fff, #2e92ff, #5084ff, #637bff, #7770ff, #8c62ff, #9959ff, #a64dff, #b33ffe, #c129fb);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   outline: none;
   position: relative;
   padding: 1rem 2rem;
+  transition: transform 0.3s ease-out;
 }
 
 .product-button:hover {
   background: linear-gradient(90deg, rgba(0,137,192,1) 0%, rgba(144,31,192,1) 100%);
+  transform: scale(1.05);
 }
 
 
@@ -447,16 +452,19 @@ nav {
   font-size: 1.5rem;
   color: #fff;
   background-image: linear-gradient(to left, #d17cda, #d073de, #cf69e1, #ce5fe5, #cc55e9, #cb4eec, #c947ef, #c740f2, #c63bf4, #c435f6, #c330f9, #c129fb);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   margin-left: 10px;
   position: relative;
   padding: 0.5rem 1rem;
+  transition: transform 0.3s ease-out;
 }
 
 .add-to-cart-button:hover {
   background-image: linear-gradient(to left, #b64fb6, #af4bb1, #a947ac, #a243a7, #9c3f9f, #963b99, #903792, #8a3390, #84308b, #7e2c86, #782881, #72247c);
+  transform: scale(1.1);
 }
 
 
@@ -477,7 +485,8 @@ nav {
 }
 
 .popular {
-  font-size: 20px;
+  font-size: 22px;
+  font-family: 'Goldman', cursive;
   color: #403e57;
   margin-top: 1rem;
   margin-left: 8rem;
@@ -486,7 +495,7 @@ nav {
   .image-grid {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     margin-left: 6rem;
   }
   
@@ -518,7 +527,192 @@ nav {
     }
   }
 
+  /* Sale */ 
+
+  .store-container {
+    display: flex;
+    margin-top: 1.5rem;
+  }
   
+  .left-column {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-column {
+    width: 50%;
+    display: flex;
+    margin-left: 4rem;
+    background: linear-gradient(89.95deg, #6F65FC -0.55%, #C129FB 98.76%);
+    margin-bottom: 4rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .for-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  .recommended {
+    margin-bottom: 20px;
+  }
+
+  .recommended, .dlc {
+    background: linear-gradient(89.95deg, #00B4FB -0.55%, #696AFC 98.76%);
+    color: #EDEEED;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .recommended-info p, .dlc-info p {
+    width: 10rem;
+    font-size: 16px;
+  }
+
+  .recommended h3, .dlc h3 {
+    margin-bottom: 1.5rem;
+    font-family: 'Goldman', cursive;
+  }
+  
+  .dlc-info, .recommended-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .dlc-image, .recommended-image {
+    width: 150px;
+    height: 150px;
+    margin-left: 1.5rem;
+    border: 3px solid #3253e5;
+    border-radius: 40px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  .dlc-image:hover, .recommended-image:hover {
+    transform: scale(1.1);
+  }
+
+  .recommended-image {
+    background-image: url(/Images/FallGuys.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dlc-image {
+    background-image: url(/Images/ApexDlc.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sale h2 {
+  margin-bottom: 2rem;
+  font-family: 'Goldman', cursive;
+  color: #EDEEED;
+}
+  
+  .sale-games {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .game-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    color: #EDEEED;
+  }
+
+  .game-info h4 {
+    font-size: 18px;
+    font-family: 'Goldman', cursive;
+  }
+
+  .game-image {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    border-radius: 30px;
+    border: 3px solid #3253e5;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+  }
+
+  .game-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .dmc {
+    background-image: url(/Images/Dante.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .sea {
+    background-image: url(/Images/Sea_of_Thieves.webp);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .game-image.conan {
+    background-image: url(/Images/Conan.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .more-button {
+    font-size: 16px;
+    padding: 0.25rem 2rem;
+    background-color: #EDEEED;
+    color: #3253e5;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(53, 111, 246, 0.5), 0 0 20px rgba(53, 111, 246, 0.3), 0 0 30px rgba(53, 111, 246, 0.2), 0 0 40px rgba(53, 111, 246, 0.1);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Goldman', cursive;
+    margin-top: 1rem;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .more-button:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background: linear-gradient(90deg, #2856b8 21.56%, #664cd9 81.43%);
+  }
+
+  .buy-button {
+    font-family: 'Goldman', cursive;
+    width:100px;
+    padding: 10px;
+    background-color: #EDEEED;
+    box-shadow: 0 0 10px rgba(53, 111, 246, 0.5), 0 0 20px rgba(53, 111, 246, 0.3), 0 0 30px rgba(53, 111, 246, 0.2), 0 0 40px rgba(53, 111, 246, 0.1);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #3253e5;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+  }
+
+  .buy-button:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background: linear-gradient(90deg, #2856b8 21.56%, #664cd9 81.43%);
+  }
 
   /* Footer */
 
@@ -623,7 +817,7 @@ nav {
 
   hr {
     border: none;
-    border-top: 2px solid #01B5FC;
+    border-top: 2px solid #3253e5;;
     margin: 20px 0;
   }
 
@@ -720,6 +914,7 @@ nav {
 
 .download-box h2 {
   font-size: 24px;
+  font-family: 'Goldman', cursive;
   color: #59557D;
   margin-bottom: 10px;
 }
@@ -916,4 +1111,66 @@ nav {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+
+
+/* Contact page */
+
+.contact-box {
+  background-color: #e2e2ea; /* Grey background */
+  padding: 5rem; /* Add padding */
+  width: 80%; /* Width set to 50% to center box horizontally */
+  margin: 5rem auto; 
+  border-radius: 40px;
+}
+
+.contact-box h2 {
+  margin-bottom: 1.5rem;
+}
+
+.logo-box {
+  text-align: center; /* Center logo horizontally */
+}
+
+.logo-box img {
+  width: 150px;
+}
+
+.form-group {
+  margin-bottom: 10px; 
+}
+
+.form-label {
+  display: block; /* Make the labels appear on a new line */
+  font-weight: bold; /* Bold text for labels */
+  margin-bottom: 5px; /* Add a little space between the label and form element */
+}
+
+.form-input {
+  width: 100%; /* Make form elements full width */
+  padding: 10px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners */
+  border: none; /* Remove borders */
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-input#message {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+}
+
+.form-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 16px 30px; /* Add some padding */
+  border: none; /* Remove borders */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add cursor on hover */
+  margin-top: 10px; /* Add a little space between the form elements and the button */
+}
+
+.form-btn:hover {
+  background-color: #3e8e41; /* Darker green background on hover */
 }

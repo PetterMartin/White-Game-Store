@@ -34,8 +34,6 @@ if (window.location.pathname === "/index.html") {
   cogIcon.classList.add("active");
 }
 
-// Drop-down menu //
-
 
 
 
@@ -166,7 +164,6 @@ iconContainer.addEventListener("click", function(event) {
 dropdownContent.addEventListener("click", function(event) {
   event.stopPropagation();
 });
-
 
 
 
