@@ -1119,7 +1119,7 @@ header.active {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-weight: 700;
-  color: #c51f1f;
+  color: #fff;
   background: linear-gradient(90deg, rgba(0,180,251,1) 0%, rgba(193,41,251,1) 100%);
   box-shadow: 6px 2px 6px rgba(193, 41, 251, 0.6), -6px 4px 12px rgba(0, 180, 251, 0.6);
   border: none;
