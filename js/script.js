@@ -186,7 +186,7 @@ var swiper = new Swiper(".slide-content", {
 const gameContainer = document.querySelector(".image-grid");
 
 async function getGames() {
-  const url = "http://game-hub.local/wp-json/wp/v2/posts?_embed";
+  const url = "https://gamehub.flywheelsites.com/wp-json/wp/v2/posts?_embed";
 
   try {
     const response = await fetch(url);

@@ -6,7 +6,7 @@ const detailsSection = document.querySelector(".details");
 
 console.log(id);
 
-const url = `http://game-hub.local/wp-json/wp/v2/posts?id=${id}&_embed`
+const url = `https://gamehub.flywheelsites.com/wp-json/wp/v2/posts?id=${id}&_embed`
 
 async function getDetails() {
   try {
