@@ -181,3 +181,78 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// Wordpress //
+const gameContainer = document.querySelector(".image-grid");
+
+async function getGames() {
+  const url = "http://game-hub.local/wp-json/wp/v2/posts?_embed";
+
+  try {
+    const response = await fetch(url);
+    const results = await response.json();
+    console.log(results);
+
+    gameContainer.innerHTML = ""; // clear existing content
+
+    results.forEach(function (result) {
+      const images = result._embedded["wp:featuredmedia"];
+
+      images.forEach(function (image) {
+        const imageUrl = image.source_url;
+
+        // Create a new image-square div for each image
+        const imageDiv = document.createElement("div");
+        imageDiv.className = "image-square";
+        imageDiv.innerHTML = `
+          <a href="blog.html?id=${result.id}">
+            <img src="${imageUrl}" alt="">
+          </a>
+        `;
+
+        // Append the new image-square div to gameContainer
+        gameContainer.appendChild(imageDiv);
+      });
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getGames()
+
+/*
+gameContainer.innerHTML = `
+  <div class="square swiper-slide fortnite" data-game-id="6">
+    <div class="content">
+      <h1 class="game-title">Fortnite</h1>
+      <div class="button-container">
+        <a href="blog.html"><button class="product-button">Get it now</button></a>
+        <a href="blog.html?id=${id}" class="add-to-cart-button">+</a>
+      </div>
+    </div>
+    <div class="free-to-play">Free to Play</div>
+  </div>
+
+  <div class="square swiper-slide counterstrike" data-game-id="14">
+    <div class="content">
+      <h1 class="game-title">Counterstrike 2</h1>
+      <div class="button-container">
+        <a href="blog.html"><button class="product-button">Get it now</button></a>
+        <a href="#" class="add-to-cart-button">+</a>
+      </div>
+    </div>
+    <div class="free-to-play">Free to Play</div>
+  </div>
+
+  <div class="square swiper-slide apex-legends" data-game-id="11">
+    <div class="content">
+      <h1 class="game-title">Apex Legends</h1>
+      <div class="button-container">
+        <a href="blog.html"><button class="product-button">Get it now</button></a>
+        <a href="#" class="add-to-cart-button">+</a>
+      </div>
+    </div>
+    <div class="free-to-play">Free to Play</div>
+  </div>
+`; */

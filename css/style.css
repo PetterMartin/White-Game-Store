@@ -1309,3 +1309,47 @@ header.active {
 .form-btn:hover {
   background-color: #3e8e41;
 }
+
+
+/* Wordpress */
+
+.game-card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.game-excerpt {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gamer-image {
+  width: 400px;
+  height: 300px;
+}
