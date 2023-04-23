@@ -193,7 +193,7 @@ async function getGames() {
     const results = await response.json();
     console.log(results);
 
-    gameContainer.innerHTML = ""; // clear existing content
+    gameContainer.innerHTML = "";
 
     results.forEach(function (result) {
       const images = result._embedded["wp:featuredmedia"];
@@ -201,7 +201,6 @@ async function getGames() {
       images.forEach(function (image) {
         const imageUrl = image.source_url;
 
-        // Create a new image-square div for each image
         const imageDiv = document.createElement("div");
         imageDiv.className = "image-square";
         imageDiv.innerHTML = `
@@ -210,7 +209,6 @@ async function getGames() {
           </a>
         `;
 
-        // Append the new image-square div to gameContainer
         gameContainer.appendChild(imageDiv);
       });
     });
