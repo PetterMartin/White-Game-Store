@@ -1,6 +1,6 @@
 # Game HUb
 
-![image](https://github.com/PetterMartin/Science/blob/main/Images/Screenshot%202023-06-10%20at%2019.08.56.png)
+![image](Images/Screenshot 2023-06-11 at 19.56.41.png)
 
 Gaming website that lets you buy and play videogames.
 
