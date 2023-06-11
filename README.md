@@ -1,6 +1,6 @@
 # Game HUb
 
-! (https://github.com/PetterMartin/White-Game-Store/blob/master/Images/Screenshot%202023-06-11%20at%2019.56.41.png)
+![image](https://github.com/PetterMartin/Science/blob/main/Images/Screenshot%202023-06-10%20at%2019.08.56.png)
 
 Gaming website that lets you buy and play videogames.
 
