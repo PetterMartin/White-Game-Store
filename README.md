@@ -30,7 +30,7 @@ Below is a list of things you will see on this webpage.
 1. Clone the repo:
 
 ```bash
-git clone (https://github.com/PetterMartin/Science/tree/main)
+git clone (https://github.com/PetterMartin/White-Game-Store/tree/master)
 ```
 
 2. Install the dependencies:
