@@ -1,6 +1,6 @@
 # Game HUb
 
-![image] (https://github.com/PetterMartin/White-Game-Store/blob/master/Images/FortniteBackground.jpeg)
+! [(https://github.com/PetterMartin/White-Game-Store/blob/master/Images/FortniteBackground.jpeg)]
 
 Gaming website that lets you buy and play videogames.
 
